@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Personal",
+			"path": "../../../../Downloads/Personal"
+		},
+		{
+			"name": "othman.github.ztm",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Personal"
+	}
+}
