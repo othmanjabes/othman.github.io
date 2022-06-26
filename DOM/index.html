@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>DOM</title>
 </head>
 <body>
@@ -11,11 +12,12 @@
     <p id="first">Get it done today</p>
     <input type="text" name="" id="userInput" placeholder="enter item">
     <button id="enter">Click me!</button>
-    <ul>
-        <li class="bold red" random="23" id="index">NoteBook</li>
-        <li>two</li>
-        <li>three</li>
-        <li>four</li>
+    
+    <ul id="parent">
+        <input type="checkbox"> <li class="child" id="index">one note</li><br/>
+        <input type="checkbox"> <li class="child" id="index">two note</li><br/>
+        <input type="checkbox"> <li class="child" id="index">three note</li><br/>
+
     </ul>
     <script type="text/javascript" src="script.js"></script>
 </body>
