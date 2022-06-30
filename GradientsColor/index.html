@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Gradients CSS</title>
 </head>
-<body>
-    <p>Choose your monster's colors:</p>
-    <input type="color" id="head" name="head"
-            value="#e66465">
-    <label for="head">Head</label>
-    <input type="color" id="body" name="body"
-                value="#f6b73c">
-    <label for="body">Body</label>
+<body id="grad">
+    <h1>Background Generator</h1>
+    <input type="color" class="color1" id="" value="#00ff00">
+    <input type="color" class="color2" id="" value="#0000ff">
+    <h2>Current Color</h2>
+    <button id="rndColor" onclick="getRndInteger()">Click Me</button>
+    <p id="demo"></p>
+
+    <h3 id="curColor"></h3>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
