@@ -1,0 +1,14 @@
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+body{
+    text-align: center;
+}
+#grad {
+    background-image: linear-gradient(to bottom right, red, ());
+  }
