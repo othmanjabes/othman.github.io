@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -50,9 +48,10 @@ a:link {
     justify-content: center;
     align-items: center;
     background: #000000;
+    margin: 5%;
 }
 .glow {
-    font-size: 80px;
+    font-size: 4rem;
     color: #fff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -80,3 +79,5 @@ a:link {
             0 0 80px #fff;
     }
   }
+
+  
