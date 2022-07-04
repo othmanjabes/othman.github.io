@@ -6,42 +6,41 @@ function Working_time_calculation() {
     var minutes = document.getElementById("minutes").value;
     let perHour = 31; // price per hour
     let sum = 0; // sum Price
-    console.log("minutes:"+minutes);
     let totalHourInMinuts = hour * 60;// converte hour to minutes && collect with minutes 
-    totalHourInMinuts = totalHourInMinuts+minutes;
-    console.log("totalHourInMinuts",totalHourInMinuts);
+    let _150 = 0;
+    let _125 = 0;
+    let _100 = 0;
+    console.log(totalHourInMinuts+"   "+minutes);
+    totalHourInMinuts = minutes+ totalHourInMinuts;
+    console.log(totalHourInMinuts+"   "+minutes);
     // ex: 8 * 60 -->  480 + 30 = 510
-
-    
+    if(totalHourInMinuts < 0)return;
     if (totalHourInMinuts <= 480) {
-        //console.log("if " + sum);
-        sum = sum + ((totalHourInMinuts/60) * perHour);
-        // console.log("sum",sum,totalHourInMinuts,perHour);
-        // console.log("if " + sum);
-        // culculator first 8 hour
+        _100 = ((totalHourInMinuts/60) * perHour);
     } else {
-        //console.log("else"+ sum);
-        sum = sum + ((480/60) * perHour);
+        _100 = _100 + ((480/60) * perHour);
         totalHourInMinuts = totalHourInMinuts - 480;
         if (totalHourInMinuts <= 120) {
-            // console.log("else if"+ sum);
-            sum = sum + ((totalHourInMinuts/60) * (perHour * 0.25+(perHour)));
+            _125 = ((totalHourInMinuts/60) * (perHour * 0.25+(perHour)));
         }
         else{
-            //console.log("else if else"+ sum);
             let temp2 = totalHourInMinuts - 120;
-            sum = sum + ((temp2/60) * (perHour * 0.25+(perHour)));
-            sum = sum + ((totalHourInMinuts/60) * (perHour * 0.50+(perHour)));
+            _125 = ((temp2/60) * (perHour * 0.25+(perHour)));
+            totalHourInMinuts = totalHourInMinuts - 120;
+            _150 = ((totalHourInMinuts/60) * (perHour * 0.50+(perHour)));
         }
     }
-
-    console.log("The Sum is: ",sum);
-    console.log("---------");
-    document.getElementById("txt100%").innerHTML = sum;
+    let sumAll = _100+_125+_150;
+    printData(_100,_125,_150,sumAll);
 }
 
 
-
+function printData(_100,_125,_150,sumAll) {
+    document.getElementById("txt100%").innerHTML = _100;
+    document.getElementById("txt125%").innerHTML = _125;
+    document.getElementById("txt150%").innerHTML = _150;
+    document.getElementById("txtSum").innerHTML = sumAll;
+}
 
 
 

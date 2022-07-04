@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Working_time_calculation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Working time calculation</h1>
@@ -12,11 +13,13 @@
     <p>minutes</p><input type="number" id="minutes">
 
     <br><button onclick="Working_time_calculation()">Result</button>
-    <div>
-        <h1 id="txt100%">100%</h1>
-        <h1 id="txt100%">125%</h1>
-        <h1 id="txt100%">150%</h1>
-    </div>
+    <ul>
+        <li>100%<h1 id="txt100%">-</h1></li>
+        <li>125%<h1 id="txt125%">-</h1></li>
+        <li>150%<h1 id="txt150%">-</h1></li>
+        <li><b>--------------</b></li>
+        <li>SUM: <h1 id="txtSum">-</h1></li>
+    </ul>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

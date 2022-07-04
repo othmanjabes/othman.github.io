@@ -1,0 +1,18 @@
+li h1{
+    display: block;
+    display: inline;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+h1{
+    margin-left: 3%;
+    font-size: 20px;
+}
+
+body{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
