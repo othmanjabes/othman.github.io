@@ -3,17 +3,12 @@ console.log("hour,minutes");
 // Working_time_calculation(hour,minutes);
 function Working_time_calculation() {
     var hour = document.getElementById("hour").value;
-    var minutes = document.getElementById("minutes").value;
     let perHour = 31; // price per hour
     let sum = 0; // sum Price
     let totalHourInMinuts = hour * 60;// converte hour to minutes && collect with minutes 
     let _150 = 0;
     let _125 = 0;
     let _100 = 0;
-    console.log(totalHourInMinuts+"   "+minutes);
-    totalHourInMinuts = minutes+ totalHourInMinuts;
-    console.log(totalHourInMinuts+"   "+minutes);
-    // ex: 8 * 60 -->  480 + 30 = 510
     if(totalHourInMinuts < 0)return;
     if (totalHourInMinuts <= 480) {
         _100 = ((totalHourInMinuts/60) * perHour);
