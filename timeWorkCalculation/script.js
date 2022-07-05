@@ -3,8 +3,7 @@ console.log("hour,minutes");
 // Working_time_calculation(hour,minutes);
 function Working_time_calculation() {
     var hour = document.getElementById("hour").value;
-    let perHour = 31; // price per hour
-    let sum = 0; // sum Price
+    let perHour = parseFloat(document.getElementById("perHour").value);
     let totalHourInMinuts = hour * 60;// converte hour to minutes && collect with minutes 
     let _150 = 0;
     let _125 = 0;
@@ -19,8 +18,7 @@ function Working_time_calculation() {
             _125 = ((totalHourInMinuts/60) * (perHour * 0.25+(perHour)));
         }
         else{
-            let temp2 = totalHourInMinuts - 120;
-            _125 = ((temp2/60) * (perHour * 0.25+(perHour)));
+            _125 = ((2) * (perHour * 0.25+(perHour)));
             totalHourInMinuts = totalHourInMinuts - 120;
             _150 = ((totalHourInMinuts/60) * (perHour * 0.50+(perHour)));
         }
@@ -36,21 +34,3 @@ function printData(_100,_125,_150,sumAll) {
     document.getElementById("txt150%").innerHTML = _150;
     document.getElementById("txtSum").innerHTML = sumAll;
 }
-
-
-
-
-
-
-
-// hour = 8 // minuts = 30
-// 8 * 60 =     480 + 30 = 510
-// 510 - 480
-// 510 / 60
-// 8.5
-// 8 * 31 = 248
-// 0.5 * 37
-
-// let hour = 8; // input hour
-// let minutes = 30; // input minutes
-
