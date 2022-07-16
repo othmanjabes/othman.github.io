@@ -1,4 +1,3 @@
-console.log("hour,minutes");
 
 // Working_time_calculation(hour,minutes);
 function Working_time_calculation() {
@@ -8,7 +7,7 @@ function Working_time_calculation() {
     let _150 = 0;
     let _125 = 0;
     let _100 = 0;
-    if(totalHourInMinuts < 0)return;
+    if(totalHourInMinuts <= 0)return;
     if (totalHourInMinuts <= 480) {
         _100 = ((totalHourInMinuts/60) * perHour);
     } else {
