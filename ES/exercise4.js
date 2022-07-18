@@ -1,6 +1,7 @@
 //Solve these problems:
 
 //#1 Create a one line function that adds adds two parameters
+const adds = (a,b) => a+b;
 
 //Closure: What does the last line return?
 const addTo = x => y => x + y
