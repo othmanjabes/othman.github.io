@@ -1,5 +1,11 @@
 /*
+const multiply = (a, b) => a * b;
+const curriedMultiply = (a) => (b) => a * b;
+const multiplyByFive = curriedMultiply(5);
+
+console.log(multiplyByFive(1));
 console.log(multiplyByFive(5));
+console.log(multiplyByFive(10));
 console.log(multiplyByFive(20));
 */
 
