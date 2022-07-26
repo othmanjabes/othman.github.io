@@ -11,6 +11,7 @@ const dragons = ['Tim', 'Johnathan', 'Sandy', 'Sarah'];
 
 dragons.filter(name => name.includes('John')) // ['Johnathan']
 
+
 // #3) Create a function that calulates the power of 100 of a number entered as a parameter
 const power100 = (num) => num**100;
 
@@ -18,3 +19,5 @@ const power100 = (num) => num**100;
 // Research for yourself why you get this result.
 
 power100(10000) // Infinity
+
+
