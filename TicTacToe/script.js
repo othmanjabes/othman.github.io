@@ -22,6 +22,7 @@ function winner() {
 
 
 
+
 function game(id) {
     let element = document.getElementById(id);
     if (turn === 'X' && element.innerHTML == '') {
