@@ -9,16 +9,22 @@
 </head>
 <body>
     <h1>Working time calculation</h1>
-    <p>perHour</p><input type="number" id="perHour">
-    <p>Hour</p><input type="number" id="hour">
-    <br><button onclick="Working_time_calculation()">Result</button>
-    <ul>
-        <li>100%<h1 id="txt100%">-</h1></li>
-        <li>125%<h1 id="txt125%">-</h1></li>
-        <li>150%<h1 id="txt150%">-</h1></li>
-        <li><b>--------------</b></li>
-        <li>SUM: <h1 id="txtSum">-</h1></li>
-    </ul>
+    <div id="continer">
+        <div id="content">
+            <div id="inputs">
+                <p>perHour: <input type="number" id="perHour"></p>
+                <p>Hour: <input type="number" id="hour"></p>
+                <button id="btnResult" onclick="Working_time_calculation()">Result</button>
+            </div>
+            <ul>
+                <li>100%: <h1 id="txt100%"></h1></li>
+                <li>125%: <h1 id="txt125%"></h1></li>
+                <li>150%: <h1 id="txt150%"></h1></li>
+                <li style="list-style-type: none;"><b>--------------</b></li>
+                <li>SUM: <h1 id="txtSum"></h1></li>
+            </ul>
+        </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

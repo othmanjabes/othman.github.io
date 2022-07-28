@@ -4,7 +4,6 @@ li h1{
 }
 
 h1{
-    margin-left: 3%;
     font-size: 20px;
 }
 
@@ -13,4 +12,19 @@ body{
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+}
+
+#continer{
+    background-color:antiquewhite;
+    border: solid;
+    border-radius: 50px;
+}
+#perHour, #hour{
+    width: 5rem;
+}
+#btnResult{
+    width: 100%;
+}
+#content{
+    margin: 20px;
 }
