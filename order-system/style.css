@@ -15,6 +15,8 @@
     font-weight: 900;
     font-size: 2rem;
 }
+
+
 /*----------End Header section-------------*/
 
 /*----------start nav section-------------*/
@@ -33,6 +35,32 @@ a{
 }
 
 /*----------End nav section-------------*/
+/*----------start aside section-------------*/
+.div3{
+    width: fit-content;
+}
+
+/*----------End aside section-------------*/
+/*----------start aside2 section-------------*/
+
+/*----------End aside2 section-------------*/
+/*----------start aside3 section-------------*/
+#img-aside-3{
+    max-width: 150px;
+    max-height: 150px;
+}
+/*----------End aside3 section-------------*/
+/*----------start main section-------------*/
+
+/*----------End main section-------------*/
+/*----------start footer section-------------*/
+
+/*----------End footer section-------------*/
+
+
+
+
+
 
 
 /* Basics of page */
@@ -44,13 +72,13 @@ a{
     grid-row-gap: 0px;
     }
     
-.div1 { grid-area: 1 / 1 / 2 / 4; background: #ff462a;height: fit-content;}
-.div2 { grid-area: 2 / 1 / 3 / 4; background: #dc0000;height: fit-content;}
-.div3 { grid-area: 3 / 3 / 4 / 4; background: #aa0000;height: fit-content;}
-.div4 { grid-area: 4 / 3 / 5 / 4; background: #aa3000;height: fit-content;}
-.div5 { grid-area: 3 / 2 / 5 / 3; background: #dc5000;height: fit-content;}
-.div6 { grid-area: 3 / 1 / 5 / 2; background: #dc7000;height: fit-content;}
-.div7 { grid-area: 5 / 1 / 6 / 4; background: #dc9000;}
+.div1 { grid-area: 1 / 1 / 2 / 4; background: #ff462a;}/*header*/
+.div2 { grid-area: 2 / 1 / 3 / 4; background: #dc0000;}/*nav*/
+.div3 { grid-area: 3 / 3 / 4 / 4; background: #aa0000;}/*aside1*/
+.div4 { grid-area: 4 / 3 / 5 / 4; background: #aa3000;}/*aside2*/
+.div5 { grid-area: 3 / 2 / 5 / 3; background: #dc5000;}/*main*/
+.div6 { grid-area: 3 / 1 / 5 / 2; background: #dc7000;}/*aside3*/
+.div7 { grid-area: 5 / 1 / 6 / 4; background: #dc9000;}/*footer*/
 
 .parentMain {
     display: grid;
@@ -60,5 +88,5 @@ a{
     grid-row-gap: 0px;
     }
     
-.div1Main { grid-area: 1 / 1 / 2 / 2; background: #00dc7d;height: fit-content;}
-.div2Main { grid-area: 2 / 1 / 3 / 2; background: #99dc7d;height: fit-content;}
+.div1Main { grid-area: 1 / 1 / 2 / 2; background: #00d}
+.div2Main { grid-area: 2 / 1 / 3 / 2; background: #99d}
