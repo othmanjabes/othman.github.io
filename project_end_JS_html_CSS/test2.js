@@ -1,4 +1,5 @@
-const arr = ['a', 'b', 'a', 'a','asd','asd','man','man','man'];
+// this is finel solving of first section 1/3
+const arr = ['a', 'b', 'a', 'a','asd','asd','man','mfdsan','man'];
 const newArr = [].concat(arr);
 let finel = [];
 let count = 0;
