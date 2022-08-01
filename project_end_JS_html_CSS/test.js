@@ -8,9 +8,11 @@ let tempArray = [].concat(arr);
 function counts() {
     let temp = arr[0];
     for (let i = 0; i < arrLength; i++) {
-        if(arr[i] === temp){
-            arr.splice(tempArray.indexOf(temp),1);
-            count++;
+        for (const element of arr){
+            if(arr[i] === temp){
+                arr.splice(tempArray.indexOf(temp),1);
+                count++;
+            }
         }
         finel = finel.concat(temp);
         finel = finel.concat(count);
